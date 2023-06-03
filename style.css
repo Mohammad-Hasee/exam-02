@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* common section starts here */
+:root {
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --light: rgb(228, 220, 220);
+    --dark: #343a40;
+    --heading-color:#645f88;
+    --paragraph-color:#8e8aad;
+    --brand-color:#6c55f9;
+    --black-color:rgba(0, 0, 0, 0.9);
+    --card-para-color:#898798;
+    --bd-color:rgb(62, 218, 62);
+    --bd-background-color:rgb(136, 249, 136);
+    --yello-color:rgb(202, 231, 123);
+    --golapi-color:rgb(244, 145, 92);
+    scroll-behavior: smooth;
+    --transition:0.5s linear;
+    font-family: "Work Sans", sans-serif;
+}
+.container{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+ul{
+    margin: 0;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+/* common section ending here */
+/* nav section starts here */
+nav{
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.nav_inner{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.nav_brand a{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+.nav_brand a span{
+    color: var(--brand-color);
+}
+.navbar ul li{
+    margin:0px 5px;
+    padding: 10px;
+}
+.navbar ul li a{
+    color:var(--heading-color) ;
+    font-size: 16px;
+}
+.navbar ul li a.active{
+    color: var(--brand-color);
+}
+.navbar ul li a:hover{
+    color: var(--heading-color);
+    font-weight: 500;
+}
+.navbar ul li:last-child a{
+    color:var(--white) ;
+    font-size: 16px;
+    background:var(--brand-color) ;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.navbar ul li:last-child a:hover{
+    color:var(--white) ;
+    background:var(--secondary) ;
+    transition:var(--transition)
+}
+.nav_brand{
+    float: left;
+    clear: right;
+    margin: 20px;
+}
+.navbar{
+    float: left;
+    clear: right;
+    margin-left: 35%;
+    box-sizing: border-box;
+}
+/* nav section ending here */
+/* hero section starts here */
+.hero{
+    width: 100%;
+    height: 550px;
+    box-sizing: border-box;
+}
+.hero_inner{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    border-radius: 40px;
+    background-color: #F6F5FC;
+}
+.hero_content{
+    width: 50%;
+    padding: 100px 30px;
+    box-sizing: border-box;
+    float: left;
+    clear: right;
+    padding-left: 45px;
+    margin-top: 40px;
+}
+.hero_content h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}
+.hero_content p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    margin-bottom: 50px;
+}
+.hero_content a{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+.hero_poster{
+    width: 50%;
+    padding: 80px 30px;
+    box-sizing: border-box;
+    float: left;
+    clear: right;
+}
+.hero_poster img{
+    width: 70%;
+    height: 70%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.hero_content a{
+    color:var(--white) ;
+    font-size: 16px;
+    background:var(--brand-color) ;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.hero_content a:hover{
+    color:var(--white) ;
+    background:var(--secondary) ;
+    transition:var(--transition)
+}
+.hero_content a i{
+    margin-left: 5px;
+}
+.arrow{
+    text-align: center;
+}
+.arrow a{
+    font-size: 16px;
+    border-radius: 12px ;
+    background: var(--white);
+    padding: 10px 4px;
+    box-shadow: 2px 2px 4px var(--light), -2px -2px 4px var(--light);
+    margin-top: -20px;
+}
+/* hero section ending here */
+/* features section starts here */
+.features{
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+    margin: 60px;
+}
+.features_area{
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    margin-left: 80px;
+}
+.features_card{
+    width: 30%;
+    float: left;
+    clear: right;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    /* margin: 15px; */
+    box-shadow: 2px 2px 6px var(--light),-2px -2px 6px var(--light);
+    margin-left: 30px;
+}
+.features_card h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.features_card p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--card-para-color);
+    margin-bottom: 20px;
+    line-break: 1.5;
+}
+.features_card a{
+    color:var(--white) ;
+    font-size: 16px;
+    background:var(--brand-color) ;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.features_card a:hover{
+    color:var(--white) ;
+    background:var(--secondary) ;
+    transition:var(--transition)
+}
+.features_card .fa-trophy{
+    font-size: 30px;
+    color: var(--golapi-color);
+    border-radius: 50%;
+    padding: 30px;
+    background-color: var(--yello-color);
+}
+/* features section ending here */
+/* about us section starts here */
+.about_us{
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.about_area{
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: auto;
+}
+.about_content{
+    width: 60%;
+    box-sizing: border-box;
+    float: left;
+    clear: right;
+    padding: 80px;
+}
+.about_poster{
+    width: 40%;
+    box-sizing: border-box;
+    float: left;
+    clear: right;
+}
+.about_poster{
+    width: auto;
+}
+.title h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--heading-color);
+    margin-bottom: 40px;
+}
+.title h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.about_content p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--card-para-color);
+    margin-bottom: 20px;
+}
+.about_content a{
+    color:var(--white) ;
+    font-size: 16px;
+    background:var(--brand-color) ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.about_content a:hover{
+    color:var(--white) ;
+    background:var(--secondary) ;
+    transition:var(--transition);
+}
+.title {
+    position: relative;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+}
+.title::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    height: 3px;
+    width: 50px;
+    background-color: var(--brand-color);
+}
+/* about us section ending here */
+/* service section starts here */
+.service_section{
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    background-color: #F6F5FC;
+}
+.service_area{
+    width: 80%;
+    height: 600px;
+    box-sizing: border-box;
+    margin: auto;
+}
+.service_header{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box; 
+    position: relative;
+}
+.service_header h1{
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+.service_header h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--card-para-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.service_main_header{
+    width: 50%;
+    height: 150px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.service_content{
+    width: 100%;
+    box-sizing: border-box; 
+}
+.service_card{
+    width: 25%;
+    float: left;
+    clear: right;
+    text-align: center;
+}
+.service_card a:hover{
+    color:var(--white) ;
+    background:var(--secondary) ;
+    transition:var(--transition);
+}
+.service_card .fa-building-wheat{
+    font-size: 20px;
+    color: var(--brand-color);
+    border-radius: 70%;
+    padding: 15px;
+    background-color: var(--white);
+    margin-top: 30px;
+}
+.service_card h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.service_card p{
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+/* service section ending here */
